@@ -1,0 +1,49 @@
+program modifiedFactorial
+var
+    n, x , result :int;
+    modifiedResult :real;
+    repeat :bool
+begin
+    modifiedResult = -1.E1 ;
+    result = 1;
+    toRead: read(n);
+    n = 2.1;
+    if (n <= 0) or false then goto toRead;
+    for (x = 1; x < n ; x + 1)
+        begin
+            result = result  * (x+1)
+        end;
+    write(result, repeat);
+    modifiedResult = ( result / 10^(n+1) ) - 1.1E2 + 5.E-3;
+    write(modifiedResult);
+    if 100 >= (modifiedResult and true) then goto toRead;
+    read(repeat);
+    repeat = (1+1) > false;
+    if repeat == true then goto toRead;
+    endlessLoop :repeat = true;
+    if repeat != false then goto endlessLoop;
+    if !repeat then goto endlessLoop;
+    repeat = modifiedResult >= 50;
+    write(repeat);
+    repeat = (n <= 0) or true
+end
+
+program modifiedFactorial
+var
+    n,x : int;
+    result : real;
+    repeat: bool
+begin
+    start: read(n, repeat);
+    result = 0;
+    for (x = 1; x < n ; x + 1)
+    begin
+        for (x = 1; x < n ; x + 1)
+        begin
+            result = result + x
+        end
+    end;
+    repeat = !repeat;
+    write(result, n, repeat);
+    if result > 100 then goto start
+end

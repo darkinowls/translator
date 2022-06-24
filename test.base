@@ -1,0 +1,18 @@
+program modifiedFactorial
+var
+    n,x : int;
+    result : real;
+    repeat: bool
+begin
+    start: read(n, repeat);
+    result = 0;
+    for (x = 1; x < n ; x + 1)
+    begin
+        for (x = 1; x < n ; x + 1)
+        begin
+            result = result + x
+        end
+    end;
+    write(result, n, repeat);
+    if (result > 100) or repeat then goto start1
+end
